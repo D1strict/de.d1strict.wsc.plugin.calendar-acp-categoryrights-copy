@@ -6,8 +6,8 @@
 		<packagedescription><![CDATA[Plugin to copy the category rights of the WoltLab Suite™ Calendar from one to another.]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Plugin um die Kategorierechte von einer Kategorie in eine Andere zu kopieren.]]></packagedescription>
 		<packageurl><![CDATA[https://shop.d1strict.de/product/17-woltlab-suite-kalender-kategoriegruppenrechte-kopieren/]]></packageurl>
-		<version><![CDATA[1.0.1]]></version>
-		<date><![CDATA[2020-10-08]]></date>
+		<version><![CDATA[1.0.2]]></version>
+		<date><![CDATA[2020-10-22]]></date>
 		<license><![CDATA[Lizenz: <https://d1strict.de/free/>]]></license>
 	</packageinformation>
 
@@ -37,6 +37,16 @@
 	</instructions>
 
   <instructions type="update" fromversion="1.0.0">
-		<void/>
+		<instruction application="calendar" type="acpTemplate">acpTemplates.tar</instruction>
+		<instruction application="calendar" type="file">files.tar</instruction>
+		<instruction type="language">lang/*.xml</instruction>
+		<instruction type="acpMenu">xml/acpMenu.xml</instruction>
+  </instructions>
+
+	<instructions type="update" fromversion="1.0.1">
+		<instruction application="calendar" type="acpTemplate">acpTemplates.tar</instruction>
+		<instruction application="calendar" type="file">files.tar</instruction>
+		<instruction type="language">lang/*.xml</instruction>
+		<instruction type="acpMenu">xml/acpMenu.xml</instruction>
   </instructions>
 </package>
